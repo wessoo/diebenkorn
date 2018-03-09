@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #D7D7D7;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -97,11 +97,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 html {
-    background: black;
+    background: #252525;
 }
 
 body {
-    background: black;
+    background: #252525;
+    color: #D7D7D7 !important;
+    font-family: 'Futura' !important;
+    font-size: 1.1em !important;
+    /*font-weight: 400 !important;*/
 }
 
 #visible-painting {
@@ -156,7 +160,7 @@ body {
 .blackbox {
     width: 233px;
     height: 270px;
-    background: rgba(0,0,0,0.5)
+    background: rgba(0,0,0,1)
 }
 
 #dotgrid {
@@ -169,8 +173,8 @@ body {
 
 .dragzone {
     z-index: 50;
-    background: rgba(255,0,0,0.3);
-    border: solid white 1px;
+    /*background: rgba(255,0,0,0.3);*/
+    /*border: solid white 1px;*/
     width: 233px;
     height: 270px;
 }
@@ -210,10 +214,106 @@ body {
 #box-4-4 { position: absolute; top: 810px; left: 1687px }
 
 
+#whiteflash {
+    width: 932px;
+    height: 1080px; 
+    position: absolute;
+    background: white;
+    /*opacity: 0;*/
+    display: none;
+    z-index: 100;
+    left: 988px;
+    top: 0;
+}
 
+#text-irr {
+    width: 988px;
+    height: 1080px; 
+    position: absolute;
+    left: 932px;
+    z-index: 200;
+    padding: 50px 100px 0 100px;
+    display: none;
+}
 
+#text-irr h2 { 
+    text-align: center; 
+    padding-bottom: 
+}
 
+#text-irr p {
+    padding-top: 30px;
+    text-align: center;
+    margin: auto;
+}
 
+#btn-continue {
+    text-align: center;
+    margin: 40px auto 0 auto;
+    display: block;
+    border-radius: 3px;
+    border: solid white 2px;
+    padding: 10px 40px; 
+    background: none;
+}
+
+#btn-finish {
+    text-align: center;
+    margin: 40px auto 0 auto;
+    display: block;
+    border-radius: 3px;
+    border: solid white 2px;
+    padding: 10px 40px; 
+    background: none;
+    position: absolute;
+    left: 850px;
+}
+
+/* LAYERS */
+#text-layers {
+    width: 988px;
+    height: 1080px; 
+    position: absolute;
+    left: 932px;
+    z-index: 500;
+    padding: 50px 100px 0 100px;
+    text-align: center;
+    display: none;
+}
+
+#text-layers h2 { 
+    text-align: center; 
+    padding-bottom: 
+}
+
+#text-layers p {
+    padding-top: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+#layer-pentimento { position: absolute; left: 0; top: 0; display: none; z-index: 200; }
+#layer-stilllife { position: absolute; left: 0; top: 0; display: none; z-index: 200; }
+#layer-femalenude { position: absolute; left: 0; top: 0; display: none; z-index: 200; }
+
+#diagram-irlayers {
+    position: absolute;
+    left: 310px;
+}
+
+#radio-visible { position: absolute; left: 20px; top: 270px; }
+#radio-pentimento { position: absolute; left: 20px; top: 360px; }
+#radio-stilllife { position: absolute; left: 20px; top: 450px; }
+#radio-femalenude { position: absolute; left: 20px; top: 550px; }
+
+#radiofill-visible { position: absolute; left: 224px; top: 288px; display: none; }
+#radiofill-pentimento { position: absolute; left: 224px; top: 378px; }
+#radiofill-stilllife { position: absolute; left: 224px; top: 468px; display: none; }
+#radiofill-femalenude { position: absolute; left: 224px; top: 568px; display: none; }
+
+#temp-p2 {
+    padding-top: 430px;
+}
 
 /* ==========================================================================
    Helper classes
